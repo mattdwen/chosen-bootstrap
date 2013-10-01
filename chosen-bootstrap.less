@@ -1,0 +1,120 @@
+﻿/*!
+ * Chosen Bootstrap Stylesheet v1.0.0
+ *
+ * Copyright 2013 Matt Dwen
+ */
+
+//
+// Base
+// --------------------------------------------------
+
+.chzn-container {
+    .btn();
+    .btn-default();
+
+    position: relative;
+    display: inline-block;
+
+    padding: 0;
+
+    text-align: left;
+    zoom: 1;
+    *display: inline;
+
+    .chzn-drop {
+        .dropdown-menu();
+
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+}
+
+//
+// Single Chosen
+// --------------------------------------------------
+
+.chzn-container-single {
+    .chzn-single {
+        .text-overflow();
+        display: block;
+        position: relative;
+        padding: @padding-base-vertical @padding-base-horizontal;
+        color: @input-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        span {
+            .text-overflow();
+            display: block;
+            margin-right: 26px;
+        }
+
+        div {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            height: 100%;
+            width: 18px;
+
+            b {
+                .caret();
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .chzn-default {
+        color: @gray-light;
+    }
+
+    .chzn-search {
+        padding: @padding-base-vertical @padding-base-horizontal;
+
+        input {
+            .form-control();
+            width: 100% !important;
+        }
+    }
+}
+
+//
+// Results
+// --------------------------------------------------
+
+.chzn-container .chzn-results {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: @padding-base-vertical @padding-base-horizontal;
+
+        em {
+            background: @brand-info;
+            font-style: normal;
+        }
+    }
+
+    .active-result {
+        cursor: pointer;
+        display: list-item;
+    }
+
+    .highlighted {
+        color: white;
+        background: @brand-primary;
+    }
+
+    no-results {
+        background: @brand-danger;
+    }
+}
