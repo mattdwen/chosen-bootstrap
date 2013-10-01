@@ -1,8 +1,7 @@
 chosen-bootstrap
 ================
 
-A stylesheet for Chosen designed to imported directly into a Bootstrap 3
-project, re-using as many mixins as possible.
+A stylesheet for [Chosen](http://harvesthq.github.io/chosen/) designed to imported directly into a [Bootstrap 3](http://getbootstrap.com/) project, re-using as many mixins as possible.
 
 Usage
 -----
